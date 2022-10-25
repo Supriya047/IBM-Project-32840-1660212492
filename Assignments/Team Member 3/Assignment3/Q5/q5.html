@@ -1,0 +1,20 @@
+<html> 
+  <body>
+      <script>
+         
+  window.watsonAssistantChatOptions = {
+    integrationID: "4e732412-bc6d-48fc-9e2b-8ff9fa12f4b8", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "8dbb86a1-e3a7-43a1-9266-f2f8398cf7dd", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Fau-syd.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-c97f2c86-bcb5-4d79-b6f3-3729fee0f727%3A%3A4e732412-bc6d-48fc-9e2b-8ff9fa12f4b8&integrationID=063ba38d-04c6-4220-b835-085d3c155587&region=au-syd&serviceInstanceID=c97f2c86-bcb5-4d79-b6f3-3729fee0f727" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+
+
+      </script>
+  </body>
+</html>
